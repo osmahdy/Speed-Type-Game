@@ -1,0 +1,195 @@
+*,
+:after,
+:before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: poppins;
+  background-color: #eee;
+}
+/* green #27AE60 */
+/* yellow #F69E0B */
+/* yellow #FFD428 */
+/* red #F44036 */
+/* blue #005cc880*/
+.header {
+  font-size: 25px;
+  background-color: #27ae60;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+.game {
+  width: 100%;
+  height: calc(100vh - 60px);
+}
+.game .container {
+  margin: 0 auto;
+  width: 600px;
+}
+.game .container .chooseSection {
+  background-color: white;
+  padding: 10px;
+  margin: 20px;
+  font-size: 20px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.game .container .chooseSection .title {
+  background-color: #eee;
+  width: 100%;
+  padding: 10px;
+}
+.game .container .chooseSection .modes {
+  margin-top: 10px;
+  width: 100%;
+}
+.game .container .chooseSection .modes span {
+  background-color: #27ae60;
+  padding: 5px;
+  font-size: 20px;
+  border-radius: 10px;
+  display: inline-block;
+  width: 25%;
+  height: 40px;
+  line-height: 30px;
+  cursor: pointer;
+  transition: 0.5s;
+  box-shadow: inset 0px 0 10px 5px #00000050;
+}
+.game .container .chooseSection .modes span:hover {
+  color: white;
+  box-shadow: inset 0 0 0 #00000050;
+}
+.game .container .rankSection {
+  background-color: white;
+  padding: 20px;
+  margin: 20px;
+  height: 300px;
+  font-size: 20px;
+  text-align: center;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.game .container .rankSection .rank {
+  margin-top: 20px;
+}
+.game .container .rankSection .btn {
+  background-color: #27ae60;
+  padding: 5px;
+  margin-top: 20px;
+  font-size: 20px;
+  border-radius: 10px;
+  display: inline-block;
+  width: 25%;
+  height: 40px;
+  line-height: 30px;
+  cursor: pointer;
+  transition: 0.5s;
+  box-shadow: inset 0px 0 10px 5px #00000050;
+}
+.game .container .rankSection .btn:hover {
+  color: white;
+  box-shadow: inset 0 0 0 #00000050;
+}
+
+.game .container .gameSection {
+  margin: 20px;
+  display: none;
+}
+.game .container .gameSection .top {
+  background-color: white;
+  padding: 10px;
+  font-size: 16px;
+  text-align: center;
+  line-height: 1.6;
+}
+.game .container .gameSection .top .time,
+.game .container .gameSection .top .type {
+  color: #27ae60;
+  font-weight: 500;
+}
+.game .container .center {
+  margin: 10px 0;
+  background-color: white;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.game .container .center > div {
+  padding: 10px;
+  margin: 10px 0;
+}
+.game .container .center .word {
+  display: none;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 22px;
+  color: #005cc8;
+  font-weight: bold;
+  background-color: #eee;
+}
+.game .container .center .input {
+  all: unset;
+  margin: 10px 0;
+  padding: 10px;
+  border: 2px solid #005cc8;
+  background-color: #eee;
+}
+.game .container .center button {
+  all: unset;
+  background-color: #27ae60;
+  text-align: center;
+  cursor: pointer;
+  padding: 10px;
+  box-shadow: inset 0px 0 10px 5px #00000050;
+  transition: 0.5s;
+}
+.game .container .center button:hover {
+  color: white;
+  box-shadow: inset 0 0 0 black;
+}
+.game .container .center .passedWords {
+  background-color: #eee;
+  text-align: center;
+}
+.game .container .center .passedWords span {
+  color: white;
+  display: inline-block;
+  background-color: #005cc880;
+  width: fit-content;
+  margin: 5px;
+  padding: 5px;
+  border-radius: 10px;
+  font-size: 16px;
+}
+.game .container .bottom {
+  background-color: white;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.game .container .bottom .timer,
+.game .score,
+.game .all,
+.game .rank {
+  color: #27ae60;
+  font-weight: 500;
+}
+.game .container .gameover {
+  text-align: center;
+  display: none;
+  width: 100%;
+  font-size: 30px;
+  color: red;
+  font-weight: 500;
+}

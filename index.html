@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/font.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <title>Type Speed Game</title>
+  </head>
+  <body>
+    <div class="header">Typing Speed Test Game</div>
+    <div class="game">
+      <div class="container">
+        <div class="chooseSection">
+          <span class="title">Choose The Mode You Want To Play On</span>
+          <div class="modes">
+            <span data-mode="easy">Easy</span>
+            <span data-mode="normal">Normal</span>
+            <span data-mode="hard">Hard</span>
+          </div>
+        </div>
+        <div class="rankSection">
+          <span class="status"></span>
+          <span class="rank"></span>
+          <span class="btn">Retry</span>
+        </div>
+        <div class="gameSection">
+          <div class="top">
+            You Are Playing On The <span class="type"></span> Mode & You Have
+            <span class="time"></span> secounds To Type The word
+          </div>
+          <div class="center">
+            <span class="word"></span>
+            <input
+              type="text"
+              class="input"
+              placeholder="Type The word here"
+              disabled
+            />
+            <button>Start The Game</button>
+            <div class="passedWords">
+              Here You Will See All The Words You Have Passed
+              <div class="content"></div>
+            </div>
+          </div>
+          <div class="bottom">
+            <span class="timerSection"
+              >Time Left: <span class="timer"></span> Secounds</span
+            >
+            <span class="scoreSection"
+              >Score: <span class="score"></span> - <span class="all"></span
+            ></span>
+          </div>
+        </div>
+        <span class="gameover"> Game Over </span>
+      </div>
+    </div>
+    <script src="js/main.js"></script>
+  </body>
+</html>
