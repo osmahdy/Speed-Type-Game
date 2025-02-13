@@ -1,8 +1,3 @@
-// let myRequest = new XMLHttpRequest();
-// myRequest.onreadystatechange = function () {
-//   if (this.readyState === 4 && this.status === 200) {
-//     let questionsObjuct = JSON.parse(this.responseText);
-//     let qcount = questionsObjuct.length;
 let modes = document.querySelectorAll(
   `.game .container .chooseSection .modes span`
 );
@@ -38,17 +33,17 @@ let words = [
   'Chair',
   'Shadow',
   'Thunder',
-  // 'Lantern',
-  // 'Capture',
-  // 'Imagine',
-  // 'Journey',
-  // 'Mountain',
-  // 'Velocity',
-  // 'Champion',
-  // 'Momentum',
-  // 'Guardian',
-  // 'Adventure',
-  // 'Phenomenon',
+  'Lantern',
+  'Capture',
+  'Imagine',
+  'Journey',
+  'Mountain',
+  'Velocity',
+  'Champion',
+  'Momentum',
+  'Guardian',
+  'Adventure',
+  'Phenomenon',
 ];
 let counter;
 let currentCounter;
@@ -83,9 +78,9 @@ btn.onclick = () => {
   word.style.display = 'block';
   word.textContent = words[i];
   btn.style.display = 'none';
-  gameOver.style.display = 'none';
   input.focus();
   Qcounter();
+  gameOver.style.display = 'none';
   currentCounter = timer.textContent;
 };
 
@@ -152,4 +147,5 @@ retryBtn.onclick = () => {
   score.textContent = i;
   clearInterval(counterInterval);
   passedWords.innerHTML = '';
+  gameOver.style.display = 'none';
 };
